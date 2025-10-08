@@ -6,29 +6,29 @@
         <title>Application Mockup</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body>
+    <body class="flex items-center flex-col">
         <!-- Title -->
         <div>
             <h1>Hello User!</h1>
         </div>
         <!-- Tasks for today -->
-        <div class="bg-gray-300 rounded-2xl p-5 mb-6">
+        <div class="bg-[#D9D9D9] rounded-2xl p-5 mb-6 w-90 shadow-2xl">
             <div class="mb-3 border-b border-gray-400 pb-1">
                 <h2 class="text-2xl font-bold text-gray-800">Thursday</h2>
                 <p class="text-sm italic font-thin">March 10</p>
             </div>
             <form class="space-y-2">
-                <div>
-                    <input type="checkbox"/>
-                    <label>Cook Food</label>
+                <div class="flex items-center p-3 rounded-lg">
+                    <input type="checkbox" class="h-5 w-5 rounded focus bg-[#D9D9D9]"/>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Cook Food</label>
                 </div>
-                <div>
-                    <input type="checkbox"/>
-                    <label>Bathe</label>
+                <div class="flex items-center p-3 rounded-lg">
+                    <input type="checkbox" class="h-5 w-5 rounded"/>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Bathe</label>
                 </div>
-                <div>
-                    <input type="checkbox"/>
-                    <label>Assignment 1</label>
+                <div class="flex items-center p-3 rounded-lg">
+                    <input type="checkbox" class="h-5 w-5 rounded"/>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Assignment 1</label>
                 </div>
                 <button>Add Task</button>
             </form>
