@@ -8,38 +8,56 @@
     </head>
     <body class="flex items-center flex-col">
         <!-- Title -->
-        <div>
-            <h1>Hello User!</h1>
+        <div class="flex w-90 justify-between items-center p-5">
+            <h1 class="text-2xl font-bold text-gray-800">Hello User!</h1>
+            <img src="img/icon_setting.svg" alt="Settings" class="w-8 h-8 filter bg-[#7D8C9A] rounded-full p-1"/>
         </div>
         <!-- Tasks for today -->
-        <div class="bg-[#D9D9D9] rounded-2xl p-5 mb-6 w-90 shadow-2xl">
+        <div class="bg-[#D9D9D9] rounded-2xl p-5 mb-6 w-90 sm:w-auto shadow-xl">
             <div class="mb-3 border-b border-gray-400 pb-1">
                 <h2 class="text-2xl font-bold text-gray-800">Thursday</h2>
-                <p class="text-sm italic font-thin">March 10</p>
+                <p class="text-sm italic font-thin pb-1">March 10</p>
             </div>
-            <form class="space-y-2">
+            <form class="space-y-2 flex flex-col items-center">
                 <div class="flex items-center p-3 rounded-lg">
-                    <input type="checkbox" class="h-5 w-5 rounded focus bg-[#D9D9D9]"/>
-                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Cook Food</label>
+                    <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600 "/>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Cook Food</label>
                 </div>
                 <div class="flex items-center p-3 rounded-lg">
                     <input type="checkbox" class="h-5 w-5 rounded"/>
-                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Bathe</label>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Bathe</label>
                 </div>
-                <div class="flex items-center p-3 rounded-lg">
+                <div class="flex items-center p-3 rounded-lg mb-10">
                     <input type="checkbox" class="h-5 w-5 rounded"/>
-                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70">Assignment 1</label>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Assignment 1</label>
                 </div>
-                <button>Add Task</button>
+                <button class="border border-[#7D8C9A] bg-[#7D8C9A] rounded-2xl  pt-2 pb-2 w-80 text-white font-thin">+ Add to-do</button>
             </form>
         </div>
         <!-- Overdue tasks -->
-        <div>
-            <h2>Overdue</h2>
+        <div class="bg-[#FFE2E2] rounded-2xl p-5 mb-6 w-90 sm:w-auto shadow-xl ">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 border-b border-gray-400 pb-2">Overdue</h2>
             <div>
-                <input type="checkbox"/>
-                <label>Assignment 1</label>
+                <div class="flex items-center p-3 rounded-lg">
+                    <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600 "/>
+                    <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Eat Breakfast</label>
+                </div>
             </div>
         </div>
+        <!-- Footer -->
+        <footer class="bg-[#EAEEF1] w-90 flex justify-between items-center" >
+            <div class="flex flex-col items-center flex-1 mt-2 mb-2">
+                <img src="img/check-box.svg" alt="Tasks" class="w-10 h-8 filter bg-[#D6DDE3] rounded-full p-2 mb-1"/> 
+                <p class="text-xs font-thin text-center w-full">To-Do</p>               
+            </div>
+            <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer">
+                <img src="img/today.svg" alt="Calender" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+                <p class="text-xs font-thin text-center w-full">Calender</p>                  
+            </div>
+            <a href="journal.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg">
+                <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter rounded-full p-2 mb-1"/>  
+                <p class="text-xs font-thin text-center w-full">Journal</p>                
+            </a>
+        </footer>
     </body>
 </html>
