@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entry</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entry</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body { margin: 0; }
+    .w-90{width:90%} .w-80{width:80%} .w-70{width:70%}
+  </style>
 </head>
-<body class="flex items-center flex-col justify-center relative">
-    
-    <div class="w-[375px] h-[667px] flex flex-col justify-between">
-            <!-- Header -->
-        <header class="w-90 flex items-center justify-center relative">
-            <a href="journal.html" class="absolute left-2 rounded-full p-1 w-7 h-7 hover:bg-[#D6DDE3] cursor-pointer">
-                <img src="img/arrow-back.svg" alt="Back"/>
-            </a>
-            
-            <h1 class="text-2xl font-bold text-gray-800 p-5">User's Thursday</h1>
-        </header>
+<body class="flex items-center flex-col">
+  <div class="w-[375px] h-[667px] flex flex-col justify-between" style="width:375px; height:667px;">
+    <!-- Header -->
+    <header class="w-90 flex items-center justify-center relative p-5">
+      <a href="journal.html" class="absolute left-2 rounded-full p-1 w-7 h-7 hover:bg-[#D6DDE3] cursor-pointer">
+        <img src="img/arrow-back.svg" alt="Back"/>
+      </a>
+      <h1 class="text-2xl font-bold text-gray-800">User's Thursday</h1>
+    </header>
 
-        <!-- Main -->
-        <textarea class="w-90 h-130 p-4 text-sm font-thin resize-none focus:outline-none" placeholder="Start Typing here..."></textarea>
-        
-        <!-- Footer -->
-        <footer class="bg-[#EAEEF1] w-90 flex justify-between items-center" >
-            <a href="index.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg transition-colors duration-200">
-                <img src="img/check-box.svg" alt="Tasks" class="w-10 h-8 filter rounded-full p-2 mb-1"/> 
-                <p class="text-xs font-thin text-center w-full">To-Do</p>               
-            </a>
-            <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer transition-colors duration-200">
-                <img src="img/today.svg" alt="Calender" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
-                <p class="text-xs font-thin text-center w-full">Calendar</p>                  
-            </div>
-            <div class="flex flex-col items-center flex-1 mt-2 mb-2 ">
-                <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter bg-[#D6DDE3] rounded-full p-2 mb-1"/>  
-                <p class="text-xs font-thin text-center w-full">Journal</p>                
-            </div>
-        </footer>
-    </div>
+    <!-- Body -->
+    <main class="w-90 flex-1">
+      <textarea class="w-full min-h-[300px] p-4 text-sm font-thin resize-none focus:outline-none"
+                placeholder="Start Typing here..."></textarea>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#EAEEF1] w-90 flex justify-between items-center">
+      <a href="index.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg transition-colors duration-200">
+        <img src="img/check-box.svg" alt="Tasks" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">To-Do</p>
+      </a>
+      <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer transition-colors duration-200">
+        <img src="img/today.svg" alt="Calender" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">Calendar</p>
+      </div>
+      <div class="flex flex-col items-center flex-1 mt-2 mb-2">
+        <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter bg-[#D6DDE3] rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">Journal</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
