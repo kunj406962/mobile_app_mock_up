@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- helpers for your custom widths -->
+  <style>
+    .w-90{width:90%} .w-80{width:80%} .w-70{width:70%}
+  </style>
 </head>
 <body class="flex items-center flex-col">
-    <div class="w-[375px] h-[667px] flex flex-col justify-between">
-        <!-- Header -->
-        <h1 class="text-2xl font-bold text-gray-800 p-5">Entries</h1>
-    
-        <!-- Entries -->
-        <div class="w-90 grid grid-cols-2 gap-4 p-4">
-            <a href="entry.html" class="bg-[#EBEFF0] rounded-2xl p-4 h-64 flex flex-col items-center justify-center w-full shadow-xl">
-                <span class="text-[#98AABA] text-5xl font-thin">+</span>
-                <p class="text-[#98AABA] text-2xl font-thin">New Entry</p>   
-            </a>
-            
-            <div class="bg-[#D2F0FF] rounded-2xl p-4 h-64 flex flex-col w-full relative shadow-xl">
-                <img src="img/edit.svg" alt="Edit" class=" absolute top-2 right-2 rounded-full bg-[#EAEEF1]  p-1 w-6 h-6 hover:bg-[#D6DDE3] cursor-pointer"/>
-                <h1 class="text-xl font-thin">Monday,</h1>
-                <h1 class="text-xl font-thin">03/07/21</h1>
-                <p class=" mt-4 text-xs font-thin">Everything was done I finished all my to-dos and did a lot of work to complete it</p>
-            </div>
-            
-            <div class="bg-[#D2F0FF] rounded-2xl p-4 h-64 flex flex-col w-full relative shadow-xl">
-                <img src="img/edit.svg" alt="Edit" class=" absolute top-2 right-2 rounded-full bg-[#EAEEF1] p-1 w-6 h-6 hover:bg-[#D6DDE3] cursor-pointer"/>
-                <h1 class="text-xl font-thin">Tuesday,</h1> 
-                <h1 class="text-xl font-thin">03/08/21</h1>
-                <p class="mt-4 text-xs font-thin">I was very productive today and finished all my tasks on time. I also went for a walk in the evening.</p>
-            </div>  
+  <div class="w-[375px] flex flex-col justify-between">
+    <!-- Header -->
+    <header class="w-90 p-5">
+      <h1 class="text-2xl font-bold text-gray-800">Entries</h1>
+    </header>
 
+    <!-- Body -->
+    <main class="w-90 p-4">
+      <div class="grid grid-cols-2 gap-4">
+        <!-- New Entry card -->
+        <a href="entry.html" class="bg-[#EBEFF0] rounded-2xl p-4 h-64 flex flex-col items-center justify-center w-full shadow-xl">
+          <span class="text-[#98AABA] text-5xl font-thin">+</span>
+          <p class="text-[#98AABA] text-2xl font-thin">New Entry</p>
+        </a>
+
+        <!-- Sample entry -->
+        <div class="bg-[#D2F0FF] rounded-2xl p-4 h-64 flex flex-col w-full relative shadow-xl">
+          <img src="img/edit.svg" alt="Edit" class="absolute top-2 right-2 rounded-full bg-[#EAEEF1] p-1 w-6 h-6"/>
+          <h2 class="text-xl font-thin">Monday,</h2>
+          <h3 class="text-xl font-thin">03/07/21</h3>
+          <p class="mt-4 text-xs font-thin">
+            Everything was done — I finished all my to-dos and did a lot of work to complete it.
+          </p>
         </div>
 
-        <!-- Footer -->
-        <footer class="bg-[#EAEEF1] w-90 flex justify-between items-center" >
-            <a href="index.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg transition-colors duration-200">
-                <img src="img/check-box.svg" alt="Tasks" class="w-10 h-8 filter rounded-full p-2 mb-1"/> 
-                <p class="text-xs font-thin text-center w-full">To-Do</p>               
-            </a>
-            <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer transition-colors duration-200">
-                <img src="img/today.svg" alt="Calendar" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
-                <p class="text-xs font-thin text-center w-full">Calendar</p>                  
-            </div>
-            <div class="flex flex-col items-center flex-1 mt-2 mb-2 ">
-                <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter bg-[#D6DDE3] rounded-full p-2 mb-1"/>  
-                <p class="text-xs font-thin text-center w-full">Journal</p>                
-            </div>
-        </footer>
-    </div>
-    
+        <!-- Sample entry -->
+        <div class="bg-[#D2F0FF] rounded-2xl p-4 h-64 flex flex-col w-full relative shadow-xl">
+          <img src="img/edit.svg" alt="Edit" class="absolute top-2 right-2 rounded-full bg-[#EAEEF1] p-1 w-6 h-6"/>
+          <h2 class="text-xl font-thin">Tuesday,</h2>
+          <h3 class="text-xl font-thin">03/08/21</h3>
+          <p class="mt-4 text-xs font-thin">
+            I was very productive today and finished all my tasks on time. I also went for a walk in the evening.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#EAEEF1] w-90 flex justify-between items-center">
+      <a href="index.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg transition-colors duration-200">
+        <img src="img/check-box.svg" alt="Tasks" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">To-Do</p>
+      </a>
+      <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer transition-colors duration-200">
+        <img src="img/today.svg" alt="Calendar" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">Calendar</p>
+      </div>
+      <div class="flex flex-col items-center flex-1 mt-2 mb-2">
+        <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter bg-[#D6DDE3] rounded-full p-2 mb-1"/>
+        <p class="text-xs font-thin text-center w-full">Journal</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
