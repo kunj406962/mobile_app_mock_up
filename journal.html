@@ -6,17 +6,21 @@
   <title>Journal</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
+    body { margin: 0; }
     .w-90{width:90%} .w-80{width:80%} .w-70{width:70%}
   </style>
 </head>
 <body class="flex items-center flex-col">
-  <div class="w-[375px] h-[667px] flex flex-col justify-between">
+  <!-- Fixed phone-sized wrapper (classes + inline style as fallback) -->
+  <div class="w-[375px] h-[667px] flex flex-col justify-between" style="width:375px; height:667px;">
+    <!-- Header -->
     <header class="w-90 p-5">
       <h1 class="text-2xl font-bold text-gray-800">Entries</h1>
     </header>
+
+    <!-- Body -->
     <main class="w-90 p-4 flex-1">
       <div class="grid grid-cols-2 gap-4">
-        
         <!-- New Entry card -->
         <a href="entry.html" class="bg-[#EBEFF0] rounded-2xl p-4 h-64 flex flex-col items-center justify-center w-full shadow-xl">
           <span class="text-[#98AABA] text-5xl font-thin">+</span>
@@ -29,7 +33,7 @@
           <h2 class="text-xl font-thin">Monday,</h2>
           <h3 class="text-xl font-thin">03/07/21</h3>
           <p class="mt-4 text-xs font-thin">
-            Everything was done — I finished all my to-dos and did a lot of work to complete it.
+            Everything was done. I finished all my to-dos and did a lot of work to complete it.
           </p>
         </div>
 
