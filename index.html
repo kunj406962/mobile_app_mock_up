@@ -25,22 +25,31 @@
           <h2 class="text-2xl font-bold text-gray-800">Thursday</h2>
           <p class="text-sm italic font-thin pb-1">March 10</p>
         </div>
-        <form class="space-y-2 flex flex-col items-center">
-          <label class="flex items-center gap-3 p-3">
-            <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600"/>
-            <span class="inline-flex items-center border border-gray-400 rounded-lg px-3 py-2 text-gray-800 font-thin">
+        
+        <form class="space-y-2 flex flex-col items-start">
+          <div class="flex items-center gap-3 p-2">
+            <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600" />
+            <label class="border border-gray-400 rounded-md px-3 py-2 font-thin text-gray-800">
             Cook Food
-            </span>
-          </label>
-          <div class="flex items-center p-3 rounded-lg">
-            <input type="checkbox" class="h-5 w-5 rounded"/>
-            <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Bathe</label>
+            </label>
           </div>
-          <div class="flex items-center p-3 rounded-lg mb-10">
-            <input type="checkbox" class="h-5 w-5 rounded"/>
-            <label class="border border-gray-400 rounded-r-full ml-3 pb-2 pl-2 pt-2 w-70 font-thin text-gray-800">Assignment 1</label>
+
+          <div class="flex items-center gap-3 p-2">
+            <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600" />
+            <label class="border border-gray-400 rounded-md px-3 py-2 font-thin text-gray-800">
+            Bathe
+            </label>
           </div>
-          <button class="bg-[#7D8C9A] rounded-2xl pt-2 pb-2 w-80 text-white font-thin hover:bg-[#6A7885] transition-colors duration-200">
+
+          <div class="flex items-center gap-3 p-2 mb-6">
+            <input type="checkbox" class="h-5 w-5 rounded focus:ring-gray-600" />
+            <label class="border border-gray-400 rounded-md px-3 py-2 font-thin text-gray-800">
+            Assignment 1
+            </label>
+          </div>
+
+          <button
+            class="bg-[#7D8C9A] rounded-2xl py-2 px-6 w-80 text-white font-thin hover:bg-[#6A7885] transition-colors duration-200">
             + Add to-do
           </button>
         </form>
@@ -64,8 +73,8 @@
           <p class="text-xs font-thin text-center w-full">To-Do</p>               
         </div>
         <div class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg cursor-pointer transition-colors duration-200">
-          <img src="img/today.svg" alt="Calender" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
-          <p class="text-xs font-thin text-center w-full">Calender</p>                  
+          <img src="img/today.svg" alt="Calendar" class="w-10 h-8 filter rounded-full p-2 mb-1"/>
+          <p class="text-xs font-thin text-center w-full">Calendar</p>                  
         </div>
         <a href="journal.html" class="flex flex-col items-center flex-1 mt-2 mb-2 hover:bg-[#D6DDE3] rounded-lg transition-colors duration-200">
           <img src="img/edit.svg" alt="Journal" class="w-10 h-8 filter rounded-full p-2 mb-1"/>  
